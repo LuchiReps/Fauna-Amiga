@@ -1,0 +1,619 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    background-color: black;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: white;
+    padding: 55px;
+    align-items: center;
+
+    box-shadow: 50 0 0;
+}
+
+header h2 {
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+    display: inline-flex;
+    margin-right: 156px;
+
+}
+
+holder {
+    max-width: 960%;
+    margin: 0 auto;
+
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-flex;
+
+
+}
+
+.menu ul li a:hover {
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+    transition: .4s;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    background-color: black;
+    color: rgb(250, 86, 168);
+
+}
+
+
+
+.menu {
+
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 71px;
+
+
+}
+
+.menu_items {
+    list-style: none;
+    display: flex;
+    padding-left: 20px;
+    margin-right: 38px;
+    align-items: center;
+
+}
+
+.margin_items li {
+    border-radius: 3px;
+    margin-right: 30px;
+
+}
+
+.menu_items li a {
+
+    color: rgb(181, 82, 98);
+    /*padding: 7px 13px;*/
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    margin-left: 45px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+.logo img {
+    height: 106px;
+    width: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: -45px;
+    margin-left: -27px;
+
+}
+
+.logo:hover {
+    opacity: 40%;
+}
+
+.logo {
+    padding-left: 72px;
+}
+
+footer {
+    background-color: grey;
+    text-align: center;
+    padding: 30px;
+    clear: both;
+    color: rgb(20, 19, 19);
+    margin-top: 20px;
+    position: relative;
+    top: 50px;
+
+}
+
+button {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    /*display: none;*/
+    border: solid white 2px;
+    border-radius: 30%;
+    background-color: rgb(181, 82, 98);
+
+}
+
+
+
+ul.show {
+    top: 65px;
+
+}
+
+
+
+/*home*/
+.Bienvenidos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: rgb(254, 254, 168);
+    padding-left: 10px;
+    padding-bottom: 20px;
+
+}
+
+
+.Bienvenidos p {
+    font-size: 20px;
+    color: white;
+    padding: 5px 5px 5px 5px;
+
+}
+
+h2 {
+    box-sizing: border-box;
+    padding-right: 100px;
+    width: 100%;
+    color: pink;
+    text-align: center;
+}
+
+article {
+    border: 5px solid pink;
+    display: flex;
+    left: 60px;
+    padding-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    top: 102px;
+}
+
+.article {
+    right: 60px;
+    padding-top: 30px;
+    border: solid pink 5px;
+    position: relative;
+    top: 50px;
+    display: flex;
+    bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.Somos {
+    padding-top: 30px;
+    border: rgb(254, 254, 168);
+    padding-left: 10px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Somos p {
+    color: white;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+
+
+}
+
+.index.carousel-inner h5:hover {
+
+    color: rgb(158, 55, 112);
+    background-color: white
+}
+
+
+.carousel-inner h5 {
+    color: white;
+    margin-left: 7px;
+    margin-right: 5px;
+
+}
+
+.carousel-inner p {
+    color: white;
+    background-color: black;
+    position: relative;
+    left: 20px;
+
+}
+
+
+
+
+.carousel-inner {
+    padding-top: 127px;
+}
+
+/*Hacemos*/
+
+
+#txt {
+
+
+
+    padding-top: -18px;
+    color: white;
+
+}
+
+.card {
+    width: 200px;
+    height: 362px;
+}
+
+.card p {
+    color: black;
+}
+
+.card h5 {
+    color: rgb(233, 64, 107);
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+    margin: 50px;
+    text-align: center;
+}
+
+.card a:hover {
+
+    color: pink;
+    text-decoration: none;
+
+}
+
+#txt {
+    display: inline-flex;
+    margin-top: 13px;
+    padding-top: 45px;
+    padding-left: 172px;
+    flex-wrap: wrap;
+}
+
+.caja1 {
+    padding-right: 30px;
+}
+
+.caja2 {
+    padding-right: 30px;
+}
+
+.caja3 {
+    display: block;
+    bottom: 40px;
+}
+
+h3 {
+    color: rgb(233, 64, 107);
+    padding-top: 144px;
+    display: inline-flex;
+    padding-right: 20px;
+    margin-left: 157px;
+}
+
+h3::selection {
+    background-color: white;
+}
+
+
+
+/*Contacto*/
+
+
+.formulario h2 {
+    padding-top: 80px;
+    padding-left: 130px;
+}
+
+.formulario {
+    padding-top: 45px;
+}
+
+.formulario p {
+    color: rgb(233, 64, 107);
+}
+
+
+
+.contacto {
+    display: flex;
+    gap: 24px;
+
+}
+
+.contacto div {
+    width: 100%;
+
+}
+
+.formulario p {
+    display: flex;
+
+}
+
+.formulario p label {
+    min-width: 86px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(20, 19, 19);
+    font-size: 14px;
+    padding: 6px 10px;
+    color: rgb(233, 64, 107);
+}
+
+.formulario p textarea {
+    height: 150px;
+    resize: none;
+
+}
+
+.formulario input[type="submit"] {
+    background-color: rgb(233, 64, 107);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    display: inline-flex;
+    left: 460px;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: rgb(186, 27, 67);
+}
+
+/*animales*/
+
+
+.animales h2 {
+    font-size: 50px;
+    padding-top: 155px;
+    color: rgb(233, 64, 107);
+    text-align: center;
+    padding-left: 116px;
+}
+
+.animales h3 {
+    padding-left: 222px;
+    position: relative;
+    top: -154px;
+    text-align: center;
+}
+
+
+
+
+.animales .carousel-inner {
+    padding-top: 50px;
+    position: relative;
+    top: -123px;
+}
+
+.animales h3 a {
+    color: rgb(233, 64, 107);
+    display: flex;
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.animales h3 a:hover {
+    color: rgb(186, 27, 67);
+    background-color: white;
+}
+
+.animales h5 {
+    text-align: center;
+}
+
+.animales a {
+    text-decoration: none;
+    color: rgb(250, 86, 168);
+    position: relative;
+    top: 7px;
+    padding: 5px 5px 5px 5px;
+
+}
+
+.animales p {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.animales a:hover {
+    padding: 5 5 5 5;
+    border-radius: 20px;
+    color: rgb(158, 55, 112);
+    background-color: white
+}
+
+
+/*novedades*/
+
+
+table {
+    margin: 150px 150px 150px 150px;
+}
+
+thead {
+    border: solid rgb(250, 86, 168) 2px;
+    border-bottom: solid 5px rgb(233, 64, 107);
+}
+
+
+td,
+th {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: solid 1px;
+}
+
+tr {
+    border: solid 1px rgb(250, 86, 168)
+}
+
+@media (max-width:952px) {
+
+    .logo {
+        font-size: 30px;
+        padding-left: 35px;
+    }
+
+    .menu_items li a {
+        font-size: 16px;
+
+    }
+
+    body {
+        font-family: 'Raleway', sans-serif;
+        margin: 0px;
+        background-color: black;
+    }
+
+
+    article {
+        margin-bottom: 60px;
+        margin-right: 51px;
+        margin-left: 40px;
+        display: flex;
+        top: 50px;
+        left: 39px;
+    }
+
+    .article {
+        margin-bottom: 60px;
+        margin-left: 51px;
+        margin-right: 40px;
+        display: flex;
+        top: 50px;
+        right: 39px;
+    }
+
+}
+
+@media screen and (max-width:858px) {
+    .menu {
+        height: 65px;
+
+    }
+
+    .btn_menu {
+        display: inline-flex;
+
+
+    }
+
+    .menu_items {
+        position: fixed;
+        width: 416px;
+        height: 326px;
+        background-color: #414141;
+        top: -100vw;
+        transition: all .4s;
+        flex-direction: column;
+        right: -59px;
+
+    }
+
+    .menu_items li:hover {
+        color: rgb(186, 170, 170);
+    }
+
+    .menu_items li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .menu_items li:hover {
+        background: none;
+    }
+
+    .menu_items li a {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+        margin-right: 30px;
+
+    }
+
+    .menu_items li a :hover {
+        color: rgb(181, 82, 98);
+    }
+
+    .logo {
+        font-size: 25px;
+        padding-left: 35px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 858px) and (orientation:landscape) {
+    .menu_items li {
+        margin-left: 30px;
+    }
+
+    .menu_items {
+        overflow: scroll;
+        height: calc(100% - 65%);
+    }
+}
+
+@media screen and (min-width:400px) {
+
+    h3 {
+
+        margin-left: 97px
+    }
+
+    .caja {
+        width: 47%;
+        gap: 12px;
+    }
+
+
+}
