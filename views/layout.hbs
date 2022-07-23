@@ -24,7 +24,7 @@
     <header>
 
       <div class="logo">
-        <a href="index.html">
+        <a href="/">
           <img src="images/logo.jpg" alt="" width="100">
         </a>
       </div>
@@ -33,16 +33,16 @@
       <nav class="menu">
         <ul class="menu_items">
           <li class="{{#if isHome}}active{{/if}}"><a href="/">Quienes Somos </a> </li>
-          <li class="{{#if isHome}}active{{/if}}"><a href="/Hacemos">Que Hacemos </a></li>
-          <li class="nav-item dropdown"class="{{#if isHome}}active{{/if}}">
+          <li class="{{#if isHacemos}}active{{/if}}"><a href="/Hacemos">Que Hacemos </a></li>
+          <li class="nav-item dropdown"class="{{#if isAnimales}}active{{/if}}">
             <a href="/Animales">
               Animales
             </a>
 
           </li>
-          <li class="{{#if isHome}}active{{/if}}"><a href="/Novedades">Novedades</a> </li>
+          <li class="{{#if isNovedades}}active{{/if}}"><a href="/Novedades">Novedades</a> </li>
 
-          <li class="{{#if isHome}}active{{/if}}"><a href="/Contacto">Contacto </a></li>
+          <li class="{{#if isContacto}}active{{/if}}"><a href="/Contacto">Contacto </a></li>
         </ul>
         <span class="btn_menu">
          <button></button>
