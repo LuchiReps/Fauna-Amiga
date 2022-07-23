@@ -32,17 +32,17 @@
 
       <nav class="menu">
         <ul class="menu_items">
-          <li class="active"><a href="index.html">Quienes Somos </a> </li>
-          <li><a href="Hacemos.html">Que Hacemos </a></li>
-          <li class="nav-item dropdown">
-            <a href="animales.html">
+          <li class="{{#if isHome}}active{{/if}}"><a href="/">Quienes Somos </a> </li>
+          <li class="{{#if isHome}}active{{/if}}"><a href="/Hacemos">Que Hacemos </a></li>
+          <li class="nav-item dropdown"class="{{#if isHome}}active{{/if}}">
+            <a href="/Animales">
               Animales
             </a>
 
           </li>
-          <li class="active"><a href="novedades.html">Novedades</a> </li>
+          <li class="{{#if isHome}}active{{/if}}"><a href="/Novedades">Novedades</a> </li>
 
-          <li><a href="Contacto.html">Contacto </a></li>
+          <li class="{{#if isHome}}active{{/if}}"><a href="/Contacto">Contacto </a></li>
         </ul>
         <span class="btn_menu">
          <button></button>
