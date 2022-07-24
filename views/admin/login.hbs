@@ -1,15 +1,13 @@
-<div class="container margenes">
+<div class="container">
     <div class="row">
         <div class="col">
-            <form action="">
+            <form action="/admin/login" method="post">
 
-                <div class="mb-3"><label class="form-label"></label><input type="text" class="form-control"
-                        placeholder="usuario">
+                <div class="mb-3"><label class="form-label"></label>
+                    <input type="text" name="usuario" class="form-control" placeholder="usuario">
                 </div>
-                <div class="mb-3"><label class="form-label">
-
-                    </label><textarea class="form-control" rows="3" type="password" placeholder="password"></textarea>
-
+                <div class="mb-3" class="form-label"></label>
+                    <input type="password" placeholder="password" name="password" class="form-control">
                 </div>
 
                 <div class="col-auto"><button type="submit" class="btn btn-primary mb-3">INGRESAR</button></div>
