@@ -11,6 +11,7 @@ var HacemosRouter = require('./routes/Hacemos') ;
 var AnimalesRouter = require('./routes/Animales') ;
 var NovedadesRouter = require('./routes/Novedades') ;
 var ContactoRouter = require('./routes/Contacto') ;
+var loginRouter = require('./routes/admin/login')
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/Hacemos', HacemosRouter)
 app.use('/Animales', AnimalesRouter)
 app.use('/Novedades', NovedadesRouter)
 app.use('/Contacto', ContactoRouter)
+app.use('/admin/login',loginRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
