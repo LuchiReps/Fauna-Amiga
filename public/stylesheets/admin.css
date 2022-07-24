@@ -13,4 +13,6 @@ button{
     height: 35px;
 }
 
-
+.logo{
+    flex-wrap: wrap;
+}
