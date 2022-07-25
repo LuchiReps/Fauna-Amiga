@@ -13,6 +13,7 @@ var NovedadesRouter = require('./routes/Novedades') ;
 var ContactoRouter = require('./routes/Contacto') ;
 var loginRouter = require('./routes/admin/login')
 
+
 var app = express();
 
 // view engine setup
@@ -31,6 +32,7 @@ app.use('/Animales', AnimalesRouter)
 app.use('/Novedades', NovedadesRouter)
 app.use('/Contacto', ContactoRouter)
 app.use('/admin/login',loginRouter)
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
