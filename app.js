@@ -5,14 +5,15 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 require('dotenv').config();
+var session = require('express-session')
 
 var indexRouter = require('./routes/index');
 var HacemosRouter = require('./routes/Hacemos') ;
 var AnimalesRouter = require('./routes/Animales') ;
 var NovedadesRouter = require('./routes/Novedades') ;
 var ContactoRouter = require('./routes/Contacto') ;
-var loginRouter = require('./routes/admin/login')
-
+var loginRouter = require('./routes/admin/login');
+var adminRouter = require('./routes/admin/novedades');
 
 var app = express();
 
@@ -26,13 +27,35 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+  secret:'HolaMundo',
+  cookie:{maxAge:null},
+  resave:false,
+  saveUninitialized:true
+}))
+
+secured = async(req,res,next) =>{
+try{
+console.log(req.session.id_usuario);
+if(req.session.id_usuario){
+next();
+}else{
+  res.redirect('/admin/login')
+}
+
+} catch(error){
+  console.log(error)
+}
+
+}
+
 app.use('/', indexRouter);
 app.use('/Hacemos', HacemosRouter)
 app.use('/Animales', AnimalesRouter)
 app.use('/Novedades', NovedadesRouter)
 app.use('/Contacto', ContactoRouter)
 app.use('/admin/login',loginRouter)
-
+app.use('/admin/novedades',secured,adminRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
