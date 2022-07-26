@@ -29,25 +29,22 @@
           </tr>
         </thead>
         <tbody>
+          {{#each novedades }}
+
           <tr>
-            <th scope="row">1</th>
-            <td>Titulo</td>
+            <th scope="row">{{id}}</th>
+            <td>{{titulo}}</td>
             <td class="text-end">
               <a href="" class="btn btn-secondary">Modificar</a>
               <a href="" class="btn btn-secondary">Eliminar</a>
             </td>
-           
-          </tr>
 
+          </tr>
+          {{#each}}
         </tbody>
       </table>
-      <div class="col">
-
-
-      </div>
-
+    
     </div>
-
 
   </div>
 </div>
