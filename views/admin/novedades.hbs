@@ -1,50 +1,53 @@
 <div class="container margenes">
+  <div class="row">
+    <div class="col">
+      <p class="parrafo">Hola {{persona}} !</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-7">
+      <h2>Listado de Novedades</h2>
+    </div>
+
+    <div class="col-5 ">
+      <a href="" class="btn btn-success">Nuevo</a>
+      <a href="" class="btn btn-danger">Cerrar Sesion</a>
+    </div>
+
+  </div>
+
+  <div class="tabla">
     <div class="row">
-        <div class="col">
-            <p class="text-end">Hola {{persona}} ! <a href="" class="btn btn-danger">Cerrar Sesion<i
-                        class="fa-solid fa-right-from-bracket"></i></a></p>
-        </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Acciones</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Titulo</td>
+            <td class="text-end">
+              <a href="" class="btn btn-secondary">Modificar</a>
+              <a href="" class="btn btn-secondary">Eliminar</a>
+            </td>
+           
+          </tr>
+
+        </tbody>
+      </table>
+      <div class="col">
+
+
+      </div>
+
     </div>
 
-    <div class="row">'
-        <div class="col-7">
-            <h2>Listado de Novedades</h2>
-        </div>
 
-        <div class="col-5 text-end">
-            <a href="" class="btn btn-success"><i class="fa-solid fa-plus-large"></i>Nuevo</a>
-
-        </div>
-
-    </div>
-
-<div class="row">
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-   
-  </tbody>
-</table>
-<div class="col">
-
-
+  </div>
 </div>
-
-</div>
-
-
-</div>
-<h3>Bienvenida {{persona}}</h3>
