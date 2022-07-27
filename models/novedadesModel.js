@@ -6,11 +6,11 @@ async function getNovedades() {
     return rows;
 }
 
-async function insertNovedades(obj) {
+async function insertNovedades(obj){
     try {
 
         var query = 'insert into novedades set ?';
-        var rows = await pool.query(query, [obj]);
+        var rows = await pool.query(query,[obj]);
         return rows;
 
     } catch (error) {
