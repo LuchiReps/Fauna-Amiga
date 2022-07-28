@@ -17,12 +17,30 @@ async function insertNovedades(obj) {
         console.log(error);
         throw error;
     }
-   
+
 }
 
-async function deleteNovedadesByID (id){
+async function deleteNovedadesByID(id) {
     var query = 'delete from novedades where id= ?';
-    var rows = await pool.query(query,[id]);
+    var rows = await pool.query(query, [id]);
     return rows;
 }
-module.exports = { getNovedades, insertNovedades, deleteNovedadesByID };
+
+
+async function getNovedadesByID(id) {
+    var query = 'select * from novedades where id= ?';
+    var rows = await pool.query(query, [id]);
+    return rows[0];
+
+}
+
+async function modificarNovedadByID(obj, id) {
+    try {
+        var query = 'update novedades set ? where id=?'
+        var rows = await pool.query(query,[obj, id])
+    }
+     catch (error){
+        throw error;
+    }
+}
+module.exports = { getNovedades, insertNovedades, deleteNovedadesByID, getNovedadesByID, modificarNovedadByID }
