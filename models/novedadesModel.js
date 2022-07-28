@@ -37,10 +37,17 @@ async function getNovedadesByID(id) {
 async function modificarNovedadByID(obj, id) {
     try {
         var query = 'update novedades set ? where id=?'
-        var rows = await pool.query(query,[obj, id])
+        var rows = await pool.query(query, [obj, id])
     }
-     catch (error){
+    catch (error) {
         throw error;
     }
 }
-module.exports = { getNovedades, insertNovedades, deleteNovedadesByID, getNovedadesByID, modificarNovedadByID }
+
+async function buscarNovedades(busqueda) {
+    var query = 'select * from novedades where titulo like ? or cuerpo like ?'
+    var rows = await pool.query(query, ['%' + busqueda + '%', '%' + busqueda + '%', '%' + busqueda + '%'])
+    return rows;
+}
+
+module.exports = { getNovedades, insertNovedades, deleteNovedadesByID, getNovedadesByID, modificarNovedadByID, buscarNovedades }

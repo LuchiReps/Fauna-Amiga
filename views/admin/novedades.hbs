@@ -19,8 +19,8 @@
 
   </div>
   <div class="search">
-    <form action="" method="">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <form action="/admin/novedades" method="get">
+      <input class="form-control me-2" name="q" type="search" placeholder="Search" {{#if q}}value="{{q}}" {{/if}} >
       <button class="btn btn-secondary" style="margin-top: 10px;" type="submit"><i class="fas fa-search"></i></button>
 
     </form>
@@ -53,7 +53,13 @@
           {{/each}}
         </tbody>
       </table>
+{{#if is_search}}
 
+{{#unless novedades.length}}
+<p> No se encontraron resultados de <b> "{{q}}"" </b> . Suerte la proxima </p>
+{{/unless}}
+
+{{/if}}
     </div>
 
   </div>
