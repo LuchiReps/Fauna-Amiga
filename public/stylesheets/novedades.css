@@ -1,7 +1,7 @@
 .margenes {
     margin-top: 128px;
     margin-right: 195px;
-
+flex-wrap: wrap;
 }
 
 a {
@@ -34,6 +34,15 @@ p.text-end {
     background-color: rgb(255, 246, 246);
     margin-top: 20px;
     color: rgb(27, 26, 26);
+}
+
+.buttons{
+    margin-left: 460px;
+}
+
+.search{
+    margin-bottom: 45px;
+    margin-top: -137px;
 }
 
 .btn {

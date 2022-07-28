@@ -106,7 +106,7 @@ holder {
 .logo img {
     height: 106px;
     width: 130px;
-   /* margin-top: 10px;
+    /* margin-top: 10px;
     margin-bottom: 10px;
     margin-right: -45px;
     margin-left: -27px;*/
@@ -173,7 +173,7 @@ ul.show {
 
 h2 {
     box-sizing: border-box;
-    padding-right: 100px;
+    /*  padding-right: 100px;*/
     width: 100%;
     color: pink;
     text-align: center;
@@ -328,12 +328,14 @@ h3::selection {
 
 
 .formulario h2 {
-    padding-top: 80px;
-    padding-left: 130px;
+    margin-top: 80px;
+    padding-left: 74px;
+    flex-wrap: wrap;
+
 }
 
 .formulario {
-    padding-top: 45px;
+    padding-top: 60px;
 }
 
 .formulario p {
@@ -345,7 +347,7 @@ h3::selection {
 .contacto {
     display: flex;
     gap: 24px;
-
+    flex-wrap: wrap
 }
 
 .contacto div {
@@ -404,22 +406,26 @@ h3::selection {
 /*animales*/
 
 
+.animales{
+    flex-wrap: wrap;
+}
 .animales h2 {
+
     font-size: 50px;
     padding-top: 155px;
     color: rgb(233, 64, 107);
     text-align: center;
-    padding-left: 116px;
+    padding-left: 67px;
 }
 
+
 .animales h3 {
-    padding-left: 222px;
+    padding-left: 205px;
     position: relative;
     top: -154px;
     text-align: center;
+
 }
-
-
 
 
 .animales .carousel-inner {
@@ -481,18 +487,17 @@ thead {
     border-bottom: solid 5px rgb(233, 64, 107);
 }
 
+th{
+    color: rgb(250, 86, 168);
+    text-align: center;
+}
 
-td,
-th {
+td{
     text-align: center;
     color: white;
-    padding: 20px;
-    border: solid 1px;
 }
 
-tr {
-    border: solid 1px rgb(250, 86, 168)
-}
+
 
 @media (max-width:952px) {
 
