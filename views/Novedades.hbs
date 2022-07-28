@@ -1,41 +1,11 @@
-<table>
-    <thead>
-        <tr>
-            <th>Novedades</th>
-            <th>Animales Adoptados</th>
-            <th>Donaciones</th>
-        </tr>
-    </thead>
+<h2>Novedades</h2>
+{{#each novedades}}
 
-    <tr>
+<div>
+    <h3 style="text-align:center;">{{titulo}}</h3>
+    <h4 style="color:rgb(178, 82, 98) ; text-align:center;">{{subtitulo}}</h4>
+    <p style="color:white ;text-align:center;">{{cuerpo}}</p>
 
 
-        <td>
-            Nueva mochila para llevar mascotas
-
-        </td>
-        <td>
-
-            Se adopto a un Mapache
-
-            Se adopto a un gato
-
-
-
-        </td>
-
-
-
-        <td>Se donaron 10000 dolares a Fauna Amiga.
-
-        </td>
-    </tr>
-
-    <br>
-
-
-
-
-
-
-</table>
+</div>
+{{/each}}
