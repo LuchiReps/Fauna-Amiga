@@ -1,11 +1,32 @@
 <h2>Novedades</h2>
+<div style=" float:right ;padding-top:100px ; position:relative; ">
+    <form action="/novedades" method="get">
+        <input type="search" name="q" {{#if q}} value="{{q}}" {{/if}}> 
+        <button type="submit" style="width: 80px; height:22px; background-color:rgb(135, 127, 127); border-radius:0% ;     padding: 1px 2px 19px 5px; ">Buscar</button>
+
+
+    </form>
+
+
+</div>
+
 {{#each novedades}}
 
 <div>
-    <h3 style="text-align:center; margin-top:20px; flex-wrap:wrap;">{{titulo}}</h3>
+    <h3 style="text-align:center; margin-top:20px; margin-top: -74px; flex-wrap:wrap;">{{titulo}}</h3>
     <h4 style="color:rgb(178, 82, 98) ; text-align:center; margin-top:20px; flex-wrap:wrap;">{{subtitulo}}</h4>
-    <p style="color:white ;text-align:center; margin-top:20px; flex-wrap:wrap;">{{cuerpo}}</p>
+    <p style="color:white ;text-align:center; margin-top:20px;  flex-wrap:wrap;">{{cuerpo}}</p>
 
 
 </div>
 {{/each}}
+
+{{#if is_search}}
+
+{{#unless novedades.length}}
+
+<p style="padding-top:150px ;float:right; color:rgb(214, 91, 112);">  No se encontraron resultados de <b> "{{q}}" </b> . Suerte la proxima </p>
+
+{{/unless}}
+
+{{/if}}
